@@ -7,7 +7,7 @@ if (typeof(Storage) == "undefined")
 
 // Check if a user is currently logged in
 // If a user is logged in show the searching, finding, and view pet profiles options
-if (sessionStorage.getItem("username))
+if (sessionStorage.getItem("username"))
 {
   document.getElementById("jumbotron-content").innerHTML = "                
                 <button id="btn_download"class="btn btn-primary btn btn-lg">Search for Lost Pet</button>
