@@ -11,11 +11,11 @@ if (sessionStorage.getItem("username"))
 {
   document.getElementById("jumbotron-content").innerHTML = '                
                 <button id="btn_download"class="btn btn-primary btn btn-lg">Search for Lost Pet</button>
-                <script type="text/javascript">$("#btn_download").click(function(){window.open('/download');})</script>
+                <script type="text/javascript">$("#btn_download").click(function(){window.open("/download");})</script>
                 <button id="btn_download"class="btn btn-primary btn btn-lg">Report a Lost Pet</button>
-                <script type="text/javascript">$("#btn_download").click(function(){window.open('/download');})</script>
+                <script type="text/javascript">$("#btn_download").click(function(){window.open("/download");})</script>
                 <button id="btn_download"class="btn btn-primary btn btn-lg">My Pet Profile</button>
-                <script type="text/javascript">$("#btn_download").click(function(){window.open('/download');})</script>
+                <script type="text/javascript">$("#btn_download").click(function(){window.open("/download");})</script>
                 ';
 }
 // Otherwise, provide a login prompt
