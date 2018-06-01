@@ -1,3 +1,5 @@
+//https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/Using_geolocation
+
 function geoFindMe() {
   var output = document.getElementById("out");
 
