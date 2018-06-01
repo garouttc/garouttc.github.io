@@ -14,6 +14,5 @@ if (sessionStorage.getItem("username"))
 // Otherwise, provide a login prompt
 else
 {
-  document.getElementById(jumbotron-content".innerHTML = '<form>\nUsername <input type="text" name="username">\nPassword <input type="password" name="password">\n<input type="submit" action="index.html" method="post" value="Submit">\n</form>';
+  document.getElementById("jumbotron-content").innerHTML = '<form>\nUsername <input type="text" name="username">\nPassword <input type="password" name="password">\n<input type="submit" action="index.html" method="post" value="Submit">\n</form>';
 }
-  
