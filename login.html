@@ -1,1 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- <title>UNLEASHED PET FINDER</title> -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/troop_styles.css">
 
+    <!--For Doc Download-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+
+    <script src="/socket.io/socket.io.js"></script>
+
+  </head>
+
+  <body>
+    <!--NAVBAR-->
+    <!--Navbars need two classes-->
+    <!--Initialize the nav bar-->
+    <nav class="navbar navbar-inverse">
+            <!--Put everything in the navbar inside a container (for padding)-->
+            <div class="container-fluid">
+            <!--Fill nav bar with content-->
+            <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-main" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                          </button>
+                    <a class="navbar-brand" href="/">UNLEASHED PET FINDER</a>
+            </div>
+
+
+                <ul class="nav navbar-nav navbar-right collapse navbar-collapse" id="bs-navbar-collapse-main">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/search.html">Search for a Pet</a></li>
+                    <li><a href="/report-found.html">Report a Lost Pet</a></li>
+                    <li><a href="/pet-profiles.html">My Pet Profiles</a></li>
+                </ul>
+
+            </div>
+           </nav>
+
+    <!--JUMBOTRON-->
+    <div class="container">
+        <div class="jumbotron">
+            <h1>UNLEASHED PET FINDER </h1>
+            <h3>Please choose option</h3>
+            <div class="col-sm-12">
+              <form>
+                <fieldset>
+                  <Login information:>
+                    Username <input type="text" name="username">
+                    Password <input type="password" name="password">
+                </fieldset>
+              </form>
+            </div>
+            <br/>
+        </div>
+
+
+    <!--IMAGES (STILL INSIDE JUMBOTRON'S CONTAINER)-->
+        <div class="row">
+
+            <!--"ROW 1"-->
+            <div class="col-sm-4 col-xs-6">
+                <div class="thumbnail">
+                    <img src="https://source.unsplash.com/WSFY8g2CJDo">
+                </div>
+            </div>
+            <div class="col-sm-4 col-xs-6">
+                <div class="thumbnail">
+                    <img src="https://source.unsplash.com/uiJ49cEhEf0">
+                </div>
+            </div>
+            <div class="col-sm-4 col-xs-6">
+                <div class="thumbnail">
+                    <img src="https://source.unsplash.com/q1pw1dOW0_0">
+                </div>
+            </div>
+        <!--CLOSE CLASS ROW-->
+        </div>
+    </div>
+
+<!--CITE COPYRIGHT-->
+<footer class="footer">
+    <div id="wrap">
+        <div id="main" class="container clear-top">
+            <p style="color: rgba(182, 188, 201, 0.295)"><cite>Image sources: unsplash.com, pixabay.com</cite></p>
+        </div>
+    </div>
+</footer>
+
+<!--Put in this order: jquery first because bootstrap relies on jquery-->
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>
