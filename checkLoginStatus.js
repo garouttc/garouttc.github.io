@@ -24,6 +24,6 @@ window.onload = function()
     document.getElementById("jumbotron-content").innerHTML = '<form>\nUsername <input type="text" name="username">\nPassword <input type="password" name="password">\n<input type="submit" action="index.html" method="post" value="Submit">\n</form>';
     
     // As well as in the navbar
-    document.getElementById("").innerHTML = '<li><a href="/index.html">Home</a></li>\n<li><a href="/search.html">Search for a Pet</a></li>\n<li><a href="/report-found.html">Report a Lost Pet</a></li>\n<li><a href="/pet-profiles.html">My Profile</a></li>\n<li><a href="/pet-profiles.html">My Pet Profiles</a></li>';
+    document.getElementById("bs-navbar-collapse-main").innerHTML = '<li><a href="/index.html">Home</a></li>\n<li><a href="/search.html">Search for a Pet</a></li>\n<li><a href="/report-found.html">Report a Lost Pet</a></li>\n<li><a href="/pet-profiles.html">My Profile</a></li>\n<li><a href="/pet-profiles.html">My Pet Profiles</a></li>';
   }
 }
