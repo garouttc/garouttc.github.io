@@ -1,5 +1,9 @@
 function submitLoginForm()
 {  
+  // Get form values
+  var username = document.getElementById("login-form").elements["username"];
+  var password = document.getElementById("login-form").elements["password"];
+  
   // Show the searching, finding, and view pet profiles options
   document.getElementById("jumbotron-content").innerHTML = '<button id="btn_download"class="btn btn-primary btn btn-lg">Search for Lost Pet</button>\n<script type="text/javascript">$("#btn_download").click(function(){window.open("/download");})</script>\n<button id="btn_download"class="btn btn-primary btn btn-lg">Report a Lost Pet</button>\n<script type="text/javascript">$("#btn_download").click(function(){window.open("/download");})</script>\n<button id="btn_download"class="btn btn-primary btn btn-lg">My Pet Profile</button>\n<script type="text/javascript">$("#btn_download").click(function(){window.open("/download");})</script>';
   
@@ -12,9 +16,7 @@ function submitLoginForm()
     liNodes[i].style.display = 'block';
   }
 
-  // Get form values
-  var username = document.getElementById("login-form").elements["username"];
-  var password = document.getElementById("login-form").elements["password"];
+
   
   // Set sessionStorage values to simulate login
   sessionStorage.setItem("username", username);
