@@ -25,8 +25,7 @@ window.onload = function()
     document.getElementById("jumbotron-content").innerHTML = '<form>\nUsername <input type="text" name="username">\nPassword <input type="password" name="password">\n<input type="submit" action="index.html" method="post" value="Submit">\n</form>';
     
     // Clear the navbar options for everything except homepage
-    document.getElementById("bs-navbar-collapse-main").innerHTML = '<li><a href="/index.html">Home</a></li>';
-    
+    document.getElementById("bs-navbar-collapse-main").style.display = 'none';
 
   }
 }
