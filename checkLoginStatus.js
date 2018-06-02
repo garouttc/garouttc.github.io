@@ -21,9 +21,7 @@ function submitLoginForm()
   // Set sessionStorage values to simulate login
   sessionStorage.setItem("username", username);
   sessionStorage.setItem("password", password);
-  
-  console.log(username);
-  console.log(password);
+ 
   
 }
 
@@ -57,10 +55,5 @@ window.onload = function()
     {
       liNodes[i].style.display = 'none';
     }
-    
-    // Github pages only allows modification of client side data, and hence we can't use PHP to get POST variables from login form
-    // So, create an event listener for submitting the form that grabs input variables, stores them, and creates sessionStorage
-
-
   }
 }
