@@ -39,7 +39,11 @@ window.onload = function()
     document.getElementById("jumbotron-content").innerHTML = '<form id="login-form">\nUsername <input type="text" name="username">\nPassword <input type="password" name="password">\n<input type="submit" action="index.html" method="post" value="Submit">\n</form>';
     
     // Hide navbar options that shouldn't be accessed from users who are not logged in
-    document.getElementById("bs-navbar-collapse-main").style.display = 'none';
+    var liNodes = document.getElementById("bs-navbar-collapse-main").getElementsByTagName("li");
+    for (int i = 1; i < liNodes.length; i++)
+    {
+      liNodes[i].style.display = 'none';
+    }
     
     // Github pages only allows modification of client side data, and hence we can't use PHP to get POST variables from login form
     // So, create an event listener for submitting the form that grabs input variables, stores them, and creates sessionStorage
