@@ -16,6 +16,12 @@ function submitLoginForm()
   var username = document.getElementById("login-form").elements["username"];
   var password = document.getElementById("login-form").elements["password"];
   
+  // Set sessionStorage values to simulate login
+  sessionStorage.setItem("username", username);
+  sessionStorage.setItem("password", password);
+  
+  window.alert(username);
+  
 }
 
 window.onload = function()
