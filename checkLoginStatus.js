@@ -47,8 +47,8 @@ window.onload = function()
   else
   {
     // Show login prompt
-    document.getElementById("jumbotron-content").innerHTML = '<form id="login-form">\nUsername <input type="text" name="username">\nPassword <input type="password" name="password">\n<input type="button" name="submit" value="Submit" onclick="submitLoginForm();">\n</form>';
-    
+    document.getElementById("jumbotron-content").innerHTML = '<form id="login-form">\nUsername <input type="text" name="username">\nPassword <input type="password" name="password">\n<input id="submit" type="button" name="submit" value="Submit">\n</form>';
+    document.getElementById("submit").addEventListener("click", submitLoginForm());
     // Hide navbar options that shouldn't be accessed from users who are not logged in
     var liNodes = document.getElementById("bs-navbar-collapse-main").getElementsByTagName("li");
     var i;
