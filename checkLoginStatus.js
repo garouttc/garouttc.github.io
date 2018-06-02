@@ -40,7 +40,8 @@ window.onload = function()
     
     // Hide navbar options that shouldn't be accessed from users who are not logged in
     var liNodes = document.getElementById("bs-navbar-collapse-main").getElementsByTagName("li");
-    for (var i = 1; i < liNodes.length; i++)
+    var i;
+    for (i = 1; i < liNodes.length; i++)
     {
       liNodes[i].style.display = 'none';
     }
