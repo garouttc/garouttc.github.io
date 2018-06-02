@@ -44,7 +44,7 @@ window.onload = function()
     // Github pages only allows modification of client side data, and hence we can't use PHP to get POST variables from login form
     // So, create an event listener for submitting the form that grabs input variables, stores them, and creates sessionStorage
     var loginDetails;
-    document.getElementById("login-form").addEventListener("submit", loginDetails = getLoginVars(event));
+   // document.getElementById("login-form").addEventListener("submit", loginDetails = getLoginVars(event));
 
   }
 }
