@@ -14,16 +14,13 @@
     <script src="/socket.io/socket.io.js"></script>
 
     <script>
-
       function beforeMsg(){
         alert("Thank you so much for taking the time to report a lost pet! You play an important role in returning pets to their owners!");
         alert("Pet Reporting Safety Tips: When reporting a pet, if you do not feel comfortable approaching the pet, keep a safe distance. When introducing yourself to a lost pet for the first time, let the pet smell the back of your hand first before you touch the pet.");
       }
-
       function afterMsg(){
         alert("The information regarding your pet report was submitted successfully! Thank you for taking your time to report the pet that you found. With your help, this pet will be reunited to its owner soon!");
       }
-
     </script>
 
   </head>
@@ -61,11 +58,11 @@
     <div class="container">
         <div class="jumbotron">
             <h1>UNLEASHED PET FINDER</h1>
-            
+
             <form action="#" method="post">
              <fieldset>
-     
-                 <div> 
+
+                 <div>
                  <h3>Please provide some general information about the pet that you found.</h3>
                  </div>
 
@@ -93,7 +90,7 @@
                  </label>
 
 
-                 <div> 
+                 <div>
                  <h3>Please provide some detailed information about the pet that you found.</h3>
                  </div>
 
@@ -121,10 +118,10 @@
                      <option>Contained in Area Provided Above</option>
                      <option>In Possession of Pet Finder</option>
                      </select><br>
-                   </label> 
+                   </label>
                  </div>
 
-                 <div> 
+                 <div>
                  <h3>Please provide any additional information about the pet that you found.</h3>
                  </div>
 
@@ -141,7 +138,10 @@
 
              </fieldset>
          </form>
-
+        <!---GEOCODER--->
+        <p><button onclick="geoFindMe()">Or Save Current Location</button></p>
+    <div id="out"></div>
+   <br/>
     <!--IMAGES (STILL INSIDE JUMBOTRON'S CONTAINER)-->
         <div class="row">
 
