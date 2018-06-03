@@ -45,7 +45,6 @@ window.onload = function()
   // If a user is not logged in
   else
   {
-    console.log("GOT HERE");
     // Show login prompt
     document.getElementById("jumbotron-content").innerHTML = '<form id="login-form">\nUsername <input type="text" name="username">\nPassword <input type="password" name="password">\n<input id="submit" type="button" name="submit" value="Submit">\n</form>';
     document.getElementById("submit").addEventListener("click", submitLoginForm());
