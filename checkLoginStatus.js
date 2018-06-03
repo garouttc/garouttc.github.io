@@ -5,7 +5,7 @@ function submitLoginForm()
   var password = document.getElementById("login-form").elements["password"].value;
   
   // Show the searching, finding, and view pet profiles options
-  document.getElementById("jdiv").innerHTML = '<h1>UNLEASHED PET FINDER: </h1>\n<h3>Please choose option</h3>\n<div class="col-sm-12" id="jumbotron-content">\n<button id="btn_download"class="btn btn-primary btn btn-lg">Search for Lost Pet</button>\n<script type="text/javascript">$("#btn_download").click(function(){window.open("/search.html");})</script>\n<button id="btn_download"class="btn btn-primary btn btn-lg">Report a Lost Pet</button>\n<script type="text/javascript">$("#btn_download").click(function(){window.open("/report-found.html");})</script>\n<button id="btn_download"class="btn btn-primary btn btn-lg">My Pet Profile</button>\n<script type="text/javascript">$("#btn_download").click(function(){window.open("/pet-profiles.html");})</script>\n</div>\n<br/>';
+  document.getElementById("jdiv").innerHTML = '<h1>UNLEASHED PET FINDER: </h1>\n<h3>Please choose option</h3>\n<div class="col-sm-12" id="jumbotron-content">\n<a id="optionButton" class="btn btn-primary btn btn-lg" href="/search.html" role="button">SEARCH FOR LOST PET</a>\n<a id="optionButton" class="btn btn-primary btn btn-lg" href="/report-found.html" role="button">REPORT FOUND PET</a>]\n<a id="optionButton" class="btn btn-primary btn btn-lg" href="/pet-profiles.html" role="button">MY PET PROFILES</a>';
   
   // Show navbar options again
   // Hide navbar options that shouldn't be accessed from users who are not logged in
