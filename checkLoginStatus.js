@@ -52,8 +52,7 @@ window.onload = function()
       liNodes[i].style.display = 'none';
     }
     // Show login prompt
-    document.getElementById("jdiv").innerHTML = '<form id="login-form">\nUsername <input type="text" name="username">\nPassword <input type="password" name="password">\n<input id="submit" type="button" name="submit" value="Submit">\n</form>';
-    document.getElementById("submit").addEventListener("click", submitLoginForm());
+    document.getElementById("jdiv").innerHTML = '<form id="login-form">\nUsername <input type="text" name="username">\nPassword <input type="password" name="password">\n<input id="submit" type="button" name="submit" value="Submit" onclick="submitLoginForm()">\n</form>';
 
   }
 }
