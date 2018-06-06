@@ -4,7 +4,8 @@ window.onload = function()
   var helloString = "Hello ";
   helloString = helloString.concat(sessionStorage.getItem("username"));
   helloString = helloString.concat("! Here are your pet profiles:");
-  document.getElementById("hello-user").appendChild(helloString);
+  var text = document.createTextNode(helloString);
+  document.getElementById("hello-user").appendChild(text);
 
   // Check the user's pet profile JSON object and display any pet profiles they have 
 
