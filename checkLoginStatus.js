@@ -1,7 +1,6 @@
 function submitLoginForm()
 {
-  window.onload = function()
-  {
+
     // Get form values
     var username = document.getElementById("login-form").elements["username"].value;
     var password = document.getElementById("login-form").elements["password"].value;
@@ -12,7 +11,7 @@ function submitLoginForm()
     jcontainer.removeChild(div);
 
     // Show the searching, finding, and view pet profiles options
-    document.getElementById("jdiv").removeAttribute("style");
+    document.getElementById("jdiv").style.display = "inline";
 
     // Show navbar options again
     // Hide navbar options that shouldn't be accessed from users who are not logged in
@@ -28,7 +27,6 @@ function submitLoginForm()
     // Set sessionStorage values to simulate login
     sessionStorage.setItem("username", username);
     sessionStorage.setItem("password", password);
-}
  
 }
 
