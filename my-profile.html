@@ -38,7 +38,7 @@
                     <li><a href="/index.html">Home</a></li>
                     <li><a href="/search.html">Search for a Pet</a></li>
                     <li><a href="/report-found.html">Report a Lost Pet</a></li>
-                    <li><a href="/pet-profiles.html">My Profile</a></li>
+                    <li><a href="/pet-profiles.html">My Profile</a></li>                  
                     <li><a href="/pet-profiles.html">My Pet Profiles</a></li>
                     <li><a id="logout" href="." onclick="logout()">Logout</a></li>
                 </ul>
@@ -49,15 +49,38 @@
     <!--JUMBOTRON-->
     <div id="jcontainer" class="container">
         <div id="jdiv" class="jumbotron">
-          <h1>UNLEASHED PET FINDER: </h1>
-          <h3>Please choose option</h3>
-          <div class="col-sm-12" id="jumbotron-content">
-            <a id="optionButton" class="btn btn-primary btn btn-lg" href="/search.html" role="button">SEARCH FOR LOST PET</a>
-            <a id="optionButton" class="btn btn-primary btn btn-lg" href="/report-found.html" role="button">REPORT FOUND PET</a>
-            <a id="optionButton" class="btn btn-primary btn btn-lg" href="/my-profile.html" role="button">MY PROFILE</a>
-            <a id="optionButton" class="btn btn-primary btn btn-lg" href="/pet-profiles.html" role="button">MY PET PROFILES</a>
-          </div>
-          <br/>
+        <p>
+			<h1 id="hello-user">My Profile:</h1>
+		</p>
+		<p>		
+			<div align="center">
+				<img src="profileImage.png">
+			</div>
+			<div vertical-align=middle>
+				<font size="6">
+					<strong>Name: </strong>&nbsp Robert Smith
+					<br/>
+					<strong>Birthday: </strong>&nbsp December 1st
+					<br/>
+					<strong>Contact Info: </strong>&nbsp robertsmith@gmail.com
+					<br/>
+					<strong>Location: </strong>&nbsp Dallas, TX
+					<br/>
+					<strong>About me: </strong>&nbsp I am a software developer in Dallas, Texas. 
+						I have two dogs named Spot and Buddy. I also have four cats named Enie, 
+						Menie, Miny and Mo. I enjoy going to the dog park to let my dogs play 
+						around and socialize with their dog friends. I love all animals and I 
+						would like to get a pet bird next. 
+					<br/>
+				</font>
+			</div>	
+		</p>
+		<br/>
+		<p>
+			<center>
+				<a class="btn btn-lg btn-primary" href="edit-Profile.html" role="button">Edit Profile &raquo;</a>  
+			</center>
+		</p>
         </div>
 
 
@@ -97,10 +120,9 @@
 <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
 crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="checkLoginStatus.js"></script>
-<script type="text/javascript" src="logout.js"></script>
   </body>
   
-  
+  <script type="text/javascript" src="checkLoginStatus.js"></script>
+  <script type="text/javascript" src="logout.js"></script>
 
 </html>
