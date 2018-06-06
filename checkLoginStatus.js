@@ -64,7 +64,7 @@ window.onload = function()
     
     // Create a new div with login prompt and attach to jumbotron
     var div = document.createElement("div");
-    div.class = "jumbotron";
+    div.className = "jumbotron";
     div.id = "login-div";
     
     div.innerHTML = '<h1>UNLEASHED PET FINDER</h1>\n<form id="login-form">\nUsername <input type="text" name="username">\nPassword <input type="password" name="password">\n<input id="submit" type="button" name="submit" value="Submit" onclick="submitLoginForm()">\n</form>';
