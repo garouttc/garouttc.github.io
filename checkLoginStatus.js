@@ -10,7 +10,7 @@ function submitLoginForm()
   jcontainer.removeChild(div);
       
   // Show the searching, finding, and view pet profiles options
-  document.getElementById("jdiv").removeAttribute("display");
+  document.getElementById("jdiv").removeAttribute("style");
   
   // Show navbar options again
   // Hide navbar options that shouldn't be accessed from users who are not logged in
