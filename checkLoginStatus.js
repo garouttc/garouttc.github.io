@@ -39,16 +39,8 @@ window.onload = function()
     window.location = "https://garouttc.github.io/error.html";
   }
 
-  // Check if a user is currently logged in
-  // If a user is logged in...
-  if (sessionStorage.getItem("username"))
-  {
-    // Show the searching, finding, and view pet profiles options
-  document.getElementById("jdiv").innerHTML = '<h1>UNLEASHED PET FINDER: </h1>\n<h3>Please choose option</h3>\n<div class="col-sm-12" id="jumbotron-content">\n<a id="optionButton" class="btn btn-primary btn btn-lg" href="/search.html" role="button">SEARCH FOR LOST PET</a>\n<a id="optionButton" class="btn btn-primary btn btn-lg" href="/report-found.html" role="button">REPORT FOUND PET</a>]\n<a id="optionButton" class="btn btn-primary btn btn-lg" href="/pet-profiles.html" role="button">MY PET PROFILES</a>';
-    
-  }
   // If a user is not logged in
-  else
+  if (!sessionStorage.getItem("username"))
   {
     // Hide navbar options that shouldn't be accessed from users who are not logged in
     var liNodes = document.getElementById("bs-navbar-collapse-main").getElementsByTagName("li");
