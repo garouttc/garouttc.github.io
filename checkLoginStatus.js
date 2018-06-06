@@ -1,6 +1,6 @@
 function submitLoginForm()
 {
-  document.onload = function()
+  window.onload = function()
   {
     // Get form values
     var username = document.getElementById("login-form").elements["username"].value;
