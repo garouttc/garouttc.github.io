@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>UNLEASHED PET FINDER</title> -->
+    <script>
+      function beforeMsg(){
+        alert("We're sorry that you lost your pet. We understand how much they mean to you. Our goal is to help you reunited with your loved one.");
+      }
+    </script>
+  </head>
+
+  <body onload="beforeMsg()">
+    <!--NAVBAR-->
+    <!--Navbars need two classes-->
+    <!--Initialize the nav bar-->
+    <nav class="navbar navbar-inverse">
+      <!--Put everything in the navbar inside a container (for padding)-->
+      <div class="container-fluid">
+        <!--Fill nav bar with content-->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-main" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                          </button>
+          <a class="navbar-brand" href="/">UNLEASHED PET FINDER</a>
+        </div>
+
+
+        <ul class="nav navbar-nav navbar-right collapse navbar-collapse" id="bs-navbar-collapse-main">
+          <!--<li><a href="/home">Home</a></li>
+                    <li><a href="/search">Search for a Pet</a></li>
+                    <li><a href="/report-found">Report a Lost Pet</a></li>
+                    <li><a href="/view-edit-profile">My Pet Profile</a></li>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/search.html">Search for a Pet</a></li>
+          <li><a href="/report-found.html">Report a Lost Pet</a></li>
+          <li><a href="/pet-profiles.html">My Pet Profiles</a></li>
+          -->
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/search.html">Search for a Pet</a></li>
+          <li><a href="/report-found.html">Report a Lost Pet</a></li>
+          <li><a href="/pet-profiles.html">My Profile</a></li>
+          <li><a href="/pet-profiles.html">My Pet Profiles</a></li>
+          <li><a id="logout" href="." onclick="logout()">Logout</a></li>
+        </ul>
+
+      </div>
+    </nav>
+
+    <!--JUMBOTRON-->
+    <div id="jcontainer" class="container">
+      <div id="jdiv" class="jumbotron">
+        <h1>UNLEASHED PET FINDER</h1>
+        <h3>Search Results</h3>
+        <br/>
+      </div>
+
+      <!-- <div class="col-sm-4 col-xs-6"> -->
+      <div>
+           <h3>Here are the lost pets found in your area.</h3>
+           <h5>We hope you and your beloved pet are reunited soon.</h5>
+
+           <div class="col-sm-4 col-xs-6">
+             <p>PET 1</p>
+              <div class="thumbnail">
+                 <img src="https://source.unsplash.com/KCdYn0xu2fU">
+                 <button type="button" class="btn btn-success btn-sm">This is my pet!</button>
+                 <button type="button" class="btn btn-danger btn-sm">This is not my pet.</button>
+              </div>
+
+             <p>PET 2</p>
+               <div class="thumbnail">
+                 <img src="https://source.unsplash.com/w_O_tPgxvok">
+                 <button type="button" class="btn btn-success btn-sm">This is my pet!</button>
+                 <button type="button" class="btn btn-danger btn-sm">This is not my pet.</button>
+               </div>
+
+             <p>PET 3</p>
+               <div class="thumbnail">
+                 <img src="https://source.unsplash.com/oH9AuO20kbk">
+                 <button type="button" class="btn btn-success btn-sm">This is my pet!</button>
+                 <button type="button" class="btn btn-danger btn-sm">This is not my pet.</button>
+               </div>
+
+             <p>PET 4 </p>
+               <div class="thumbnail">
+                 <img src="https://source.unsplash.com/_c_I5GMZYR0">
+                 <button type="button" class="btn btn-success btn-sm">This is my pet!</button>
+                 <button type="button" class="btn btn-danger btn-sm">This is not my pet.</button>
+               </div>
+
+             <p>PET 5 </p>
+               <div class="thumbnail">
+                 <img src="https://source.unsplash.com/geO1ObmZMVQ">
+                 <button type="button" class="btn btn-success btn-sm">This is my pet!</button>
+                 <button type="button" class="btn btn-danger btn-sm">This is not my pet.</button>
+               </div>
+
+             <p>PET 6 </p>
+               <div class="thumbnail">
+                 <img src="https://source.unsplash.com/WSFY8g2CJDo">
+                 <button type="button" class="btn btn-success btn-sm">This is my pet!</button>
+                 <button type="button" class="btn btn-danger btn-sm">This is not my pet.</button>
+               </div>
+
+             <p>PET 7 </p>
+               <div class="thumbnail">
+                 <img src="https://source.unsplash.com/FqkBXo2Nkq0">
+                 <button type="button" class="btn btn-success btn-sm">This is my pet!</button>
+                 <button type="button" class="btn btn-danger btn-sm">This is not my pet.</button>
+               </div>
+
+               <p>PET 8</p>
+                <div class="thumbnail">
+                   <img src="https://source.unsplash.com/E1GqYJFnXoU">
+                   <button type="button" class="btn btn-success btn-sm">This is my pet!</button>
+                   <button type="button" class="btn btn-danger btn-sm">This is not my pet.</button>
+                </div>
+
+               <p>PET 9</p>
+                 <div class="thumbnail">
+                   <img src="https://source.unsplash.com/n4RJtjHhb9A">
+                   <button type="button" class="btn btn-success btn-sm">This is my pet!</button>
+                   <button type="button" class="btn btn-danger btn-sm">This is not my pet.</button>
+                 </div>
+
+               <p>PET 10</p>
+                 <div class="thumbnail">
+                   <img src="https://source.unsplash.com/yZTbN9-5fx4">
+                   <button type="button" class="btn btn-success btn-sm">This is my pet!</button>
+                   <button type="button" class="btn btn-danger btn-sm">This is not my pet.</button>
+                 </div>
+
+               <p>PET 11</p>
+                 <div class="thumbnail">
+                   <img src="https://source.unsplash.com/J1R-xl_TPPM">
+                   <button type="button" class="btn btn-success btn-sm">This is my pet!</button>
+                   <button type="button" class="btn btn-danger btn-sm">This is not my pet.</button>
+                 </div>
+
+               <p>PET 12</p>
+                 <div class="thumbnail">
+                   <img src="https://source.unsplash.com/q1pw1dOW0_0">
+                   <button type="button" class="btn btn-success btn-sm">This is my pet!</button>
+                   <button type="button" class="btn btn-danger btn-sm">This is not my pet.</button>
+                 </div>
+
+               <p>PET 13</p>
+                 <div class="thumbnail">
+                   <img src="https://source.unsplash.com/BzHNKFUGHh0">
+                   <button type="button" class="btn btn-success btn-sm">This is my pet!</button>
+                   <button type="button" class="btn btn-danger btn-sm">This is not my pet.</button>
+                 </div>
+
+               <p>PET 14</p>
+                 <div class="thumbnail">
+                   <img src="https://source.unsplash.com/GXMr7BadXQo">
+                   <button type="button" class="btn btn-success btn-sm">This is my pet!</button>
+                   <button type="button" class="btn btn-danger btn-sm">This is not my pet.</button>
+                 </div>
+
+               <p>PET 15</p>
+                 <div class="thumbnail">
+                   <img src="https://source.unsplash.com/adK3Vu70DEQ">
+                   <button type="button" class="btn btn-success btn-sm">This is my pet!</button>
+                   <button type="button" class="btn btn-danger btn-sm">This is not my pet.</button>
+                 </div>
+             </div>
+           </div>
+
+
+      <!--IMAGES (STILL INSIDE JUMBOTRON'S CONTAINER)-->
+      <!-- <div class="row"> -->
+
+        <!--"ROW 1"-->
+        <!-- <div class="col-sm-4 col-xs-6">
+          <div class="thumbnail">
+            <img src="https://source.unsplash.com/WSFY8g2CJDo">
+          </div>
+        </div>
+        <div class="col-sm-4 col-xs-6">
+          <div class="thumbnail">
+            <img src="https://source.unsplash.com/uiJ49cEhEf0">
+          </div>
+        </div>
+        <div class="col-sm-4 col-xs-6">
+          <div class="thumbnail">
+            <img src="https://source.unsplash.com/q1pw1dOW0_0">
+          </div>
+        </div> -->
+        <!--CLOSE CLASS ROW-->
+      <!-- </div> -->
+    </div>
+
+    <!--CITE COPYRIGHT-->
+    <footer class="footer">
+      <div id="wrap">
+        <div id="main" class="container clear-top">
+          <p style="color: rgba(182, 188, 201, 0.295)"><cite>Image sources: unsplash.com, pixabay.com</cite></p>
+        </div>
+      </div>
+    </footer>
+
+    <!--Put in this order: jquery first because bootstrap relies on jquery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
+
+
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="mapp.js"></script>
+    <script src="datetimepicker.js"></script>
+    <script src="showFile.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='custom.css' rel='stylesheet' type='text/css'>
+  </body>
+  <!--
+  <script type="text/javascript" src="checkLoginStatus.js"></script>
+  <script type="text/javascript" src="logout.js"></script>
+  -->
+</html>
