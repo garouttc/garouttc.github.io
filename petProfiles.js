@@ -1,4 +1,4 @@
-window.onload = function()
+function displayPetProfiles()
 {
   // Say hello to the logged-in user
   var helloString = "Hello ";
@@ -27,3 +27,5 @@ window.onload = function()
   
   // Add button for creating a new pet profile 
 }
+
+document.addEventListener("DOMContentLoaded", displayPetProfiles());
