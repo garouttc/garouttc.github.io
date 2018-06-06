@@ -1,31 +1,34 @@
 function submitLoginForm()
-{  
-  // Get form values
-  var username = document.getElementById("login-form").elements["username"].value;
-  var password = document.getElementById("login-form").elements["password"].value;
-  
-  // Remove the login div
-  var div = document.getElementById("login-div");
-  var jcontainer = document.getElementById("jcontainer");
-  jcontainer.removeChild(div);
-      
-  // Show the searching, finding, and view pet profiles options
-  document.getElementById("jdiv").removeAttribute("style");
-  
-  // Show navbar options again
-  // Hide navbar options that shouldn't be accessed from users who are not logged in
-  var liNodes = document.getElementById("bs-navbar-collapse-main").getElementsByTagName("li");
-  var i;
-  for (i = 1; i < liNodes.length; i++)
+{
+  document.onload = function()
   {
-    liNodes[i].style.display = 'block';
-  }
+    // Get form values
+    var username = document.getElementById("login-form").elements["username"].value;
+    var password = document.getElementById("login-form").elements["password"].value;
+
+    // Remove the login div
+    var div = document.getElementById("login-div");
+    var jcontainer = document.getElementById("jcontainer");
+    jcontainer.removeChild(div);
+
+    // Show the searching, finding, and view pet profiles options
+    document.getElementById("jdiv").removeAttribute("style");
+
+    // Show navbar options again
+    // Hide navbar options that shouldn't be accessed from users who are not logged in
+    var liNodes = document.getElementById("bs-navbar-collapse-main").getElementsByTagName("li");
+    var i;
+    for (i = 1; i < liNodes.length; i++)
+    {
+      liNodes[i].style.display = 'block';
+    }
 
 
-  
-  // Set sessionStorage values to simulate login
-  sessionStorage.setItem("username", username);
-  sessionStorage.setItem("password", password);
+
+    // Set sessionStorage values to simulate login
+    sessionStorage.setItem("username", username);
+    sessionStorage.setItem("password", password);
+}
  
 }
 
