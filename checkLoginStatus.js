@@ -34,7 +34,7 @@ function submitLoginForm()
     sessionStorage.setItem("pets", JSON.stringify(pets));
 }
 
-window.onload = function()
+function login()
 {
   // First check if the browser supports session storage
   if (typeof(Storage) == "undefined")
@@ -69,3 +69,5 @@ window.onload = function()
     jcontainer.insertBefore(div, jcontainer.childNodes[0]);
   }
 }
+
+document.addEventListener("DOMContentLoaded", login());
