@@ -52,7 +52,14 @@ window.onload = function()
       liNodes[i].style.display = 'none';
     }
     // Show login prompt
-    document.getElementById("jdiv").innerHTML = '<h1>UNLEASHED PET FINDER</h1>\n<form id="login-form">\nUsername <input type="text" name="username">\nPassword <input type="password" name="password">\n<input id="submit" type="button" name="submit" value="Submit" onclick="submitLoginForm()">\n</form>';
-
+    //document.getElementById("jdiv").innerHTML = '<h1>UNLEASHED PET FINDER</h1>\n<form id="login-form">\nUsername <input type="text" name="username">\nPassword <input type="password" name="password">\n<input id="submit" type="button" name="submit" value="Submit" onclick="submitLoginForm()">\n</form>';
+    
+    // Hide current jumbotron content
+    document.getElementById("jdiv").style.display='none';
+    
+    // Create a new div with login prompt and attach to jumbotron
+    var div = document.createElement("div");
+    div.innerHTML = '<h1>UNLEASHED PET FINDER</h1>\n<form id="login-form">\nUsername <input type="text" name="username">\nPassword <input type="password" name="password">\n<input id="submit" type="button" name="submit" value="Submit" onclick="submitLoginForm()">\n</form>';
+    document.getElementById("jcontainer").appendChild(div);
   }
 }
