@@ -27,7 +27,11 @@ function submitLoginForm()
     // Set sessionStorage values to simulate login
     sessionStorage.setItem("username", username);
     sessionStorage.setItem("password", password);
- 
+    
+    // Create an empty JSON object and store it in sessionStorage
+    // This object acts as an array of JSON objects, each one containing pet dataa 
+    var pets = [];
+    sessionStorage.setItem("pets", JSON.stringify(pets));
 }
 
 window.onload = function()
