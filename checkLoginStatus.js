@@ -10,7 +10,7 @@ function submitLoginForm()
   jcontainer.removeChild(div);
       
   // Show the searching, finding, and view pet profiles options
-  document.getElementById("jdiv").display="block";
+  document.getElementById("jdiv").removeAttribute("display");
   
   // Show navbar options again
   // Hide navbar options that shouldn't be accessed from users who are not logged in
@@ -60,7 +60,7 @@ window.onload = function()
     //document.getElementById("jdiv").innerHTML = '<h1>UNLEASHED PET FINDER</h1>\n<form id="login-form">\nUsername <input type="text" name="username">\nPassword <input type="password" name="password">\n<input id="submit" type="button" name="submit" value="Submit" onclick="submitLoginForm()">\n</form>';
     
     // Hide current jumbotron content
-    document.getElementById("jdiv").style.display='none';
+    document.getElementById("jdiv").style.display="none";
     
     // Create a new div with login prompt and attach to jumbotron
     var div = document.createElement("div");
