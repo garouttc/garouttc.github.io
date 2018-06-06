@@ -7,7 +7,7 @@
     <!-- <title>UNLEASHED PET FINDER</title> -->
     <script>
       function beforeMsg(){
-        alert("We're sorry that you lost your pet. We understand how much they mean to you. Our goal is to help you reunited with your loved one.");        
+        alert("We're sorry that you lost your pet. We understand how much they mean to you. Our goal is to help you reunited with your loved one.");
       }
     </script>
   </head>
@@ -44,7 +44,7 @@
           <li><a href="/index.html">Home</a></li>
           <li><a href="/search.html">Search for a Pet</a></li>
           <li><a href="/report-found.html">Report a Lost Pet</a></li>
-          <li><a href="/pet-profiles.html">My Profile</a></li>                  
+          <li><a href="/pet-profiles.html">My Profile</a></li>
           <li><a href="/pet-profiles.html">My Pet Profiles</a></li>
           <li><a id="logout" href="." onclick="logout()">Logout</a></li>
         </ul>
@@ -57,7 +57,7 @@
       <div id="jdiv" class="jumbotron">
         <h1>UNLEASHED PET FINDER</h1>
         <h3>Please provide your lost pet's details</h3>
-        <form action="#" method="post">
+        <form action="/search-results.html" method="post">
           <fieldset>
             <legend>My Pet</legend>
 
@@ -82,6 +82,9 @@
               <label>Breed:
                      <input type="text" name="breed" size="30" maxlength="256">
                  </label>
+                 <label>Color:
+                        <input type="text" name="color" size="30" maxlength="256">
+                    </label>
             </div>
 
             <label> Gender:
@@ -109,9 +112,9 @@
                      <input type="radio" name="size" value="unknown"> Large
                  </label>
             </div>
-            
-            
-            
+
+
+
             <!-- <label>Species: <select name="species" id="species-selector">
                    <option>Dog</option>
                    <option>Cat</option>
@@ -126,9 +129,9 @@
               <label>Upload Photos of Pet:</label>
               <img src="" style="display:none" height="200" id="image">
               <input type="file" onchange="showFile.call(this)">
-              
+
             </div>
-            
+
             <div>
               <label>Last time seen: </label>
               <div class='input-group date'>
