@@ -10,6 +10,7 @@ function displayPetProfiles()
 
   // Get the user's JSON pet list from storage
   var petsStorage = sessionStorage.getItem("pets");
+  var pets;
   if (petsStorage)
   {
     pets = JSON.parse(petsStorage);
@@ -32,7 +33,7 @@ function displayPetProfiles()
     // Display pet name as a header for profile
     var nameHeader = document.createElement("h3");
     var text = "Pet: ";
-    text.concat(pets[i].name);
+    text.concat(pet.name);
     nameHeader.appendChild(document.createTextNode(text));
     div.appendChild(nameHeader);
     
