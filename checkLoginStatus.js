@@ -30,7 +30,7 @@ function submitLoginForm()
     
     // Create an empty JSON object and store it in sessionStorage
     // This object acts as an array of JSON objects, each one containing pet dataa 
-    var pets = [{name: "Test Doggo", species: "Canis lupus familiaris", breed: "Golden Retriever", color: "Golden"}];
+    var pets = [{"name": "Test Doggo", "species": "Canis lupus familiaris", "breed": "Golden Retriever", "color": "Golden"}];
     sessionStorage.setItem("pets", JSON.stringify(pets));
 }
 
