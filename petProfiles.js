@@ -11,16 +11,18 @@ function displayPetProfiles()
   // Get the user's JSON pet list from storage
   var petsStorage = sessionStorage.getItem("pets");
   var pets;
+  var pet;
   if (petsStorage)
   {
     pets = JSON.parse(petsStorage);
-    window.alert(pets[0].name);
+    //window.alert(pets[0].name);
   }
   
   // Display pet profiles
   var i;
   for (i = 0; i < pets.length; i++)
   {
+    pet = pets[i];
     // Create a div for each pet and attach it to the jumbotron
     var div = document.createElement("div");
     div.className = "col-sm-12";
@@ -28,7 +30,7 @@ function displayPetProfiles()
     id = id.concat(i);
     div.id = id;
     document.getElementById("jcontainer").appendChild(div);
-    var pet = pets[i];
+
     
     // Display pet name as a header for profile
     var nameHeader = document.createElement("h3");
