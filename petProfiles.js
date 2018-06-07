@@ -17,6 +17,7 @@ function displayPetProfiles()
   }
   
   // Display pet profiles
+  var i;
   for (i = 0; i < pets.length; i++)
   {
     // Create a div for each pet and attach it to the jumbotron
