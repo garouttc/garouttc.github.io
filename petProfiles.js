@@ -37,6 +37,7 @@ function displayPetProfiles()
     // Then list its attributes
     // Species
     var list = document.createElement("ul");
+    div.appendChild(list);
     var attr = document.createElement("li");
     attr.style.listStyleType = "none";
     var attrText = "Species: ";
