@@ -38,7 +38,7 @@ function displayPetProfiles()
     // Species
     var list = document.createElement("ul");
     var attr = document.createElement("li");
-    attr.style.list-style-type = "none";
+    attr.style.liststyletype = "none";
     var attrText = "Species: ";
     attrText.concat(pet.species);
     attr.appendChild(document.createTextNode(attrText));
