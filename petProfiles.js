@@ -25,7 +25,7 @@ function displayPetProfiles()
     var id = "jumbotron-content";
     id = id.concat(i);
     div.id = id;
-    document.getElementById("jdiv").appendChild(div);
+    document.getElementById("jcontainer").appendChild(div);
     var pet = pets[i];
     
     // Display pet name as a header for profile
