@@ -38,7 +38,7 @@ function displayPetProfiles()
     // Species
     var list = document.createElement("ul");
     var attr = document.createElement("li");
-    attr.style.liststyletype = "none";
+    attr.style.listStyleType = "none";
     var attrText = "Species: ";
     attrText.concat(pet.species);
     attr.appendChild(document.createTextNode(attrText));
@@ -46,7 +46,7 @@ function displayPetProfiles()
     
     // Breed
     attr = document.createElement("li");
-    attr.style.list-style-type = "none";
+    attr.style.listStyleType = "none";
     attrText = "Breed: ";
     attrText.concat(pet.breed);
     attr.appendChild(document.createTextNode(attrText));
@@ -54,7 +54,7 @@ function displayPetProfiles()
     
     // Gender
     attr = document.createElement("li");
-    attr.style.list-style-type = "none";
+    attr.style.listStyleType = "none";
     attrText = "Gender: ";
     attrText.concat(pet.gender);
     attr.appendChild(document.createTextNode(attrText));
@@ -62,7 +62,7 @@ function displayPetProfiles()
     
     // Gender
     attr = document.createElement("li");
-    attr.style.list-style-type = "none";
+    attr.style.listStyleType = "none";
     attrText = "Color: ";
     attrText.concat(pet.color);
     attr.appendChild(document.createTextNode(attrText));
