@@ -13,6 +13,7 @@ function displayPetProfiles()
   if (petsStorage)
   {
     pets = JSON.parse(petsStorage);
+    window.alert(pets);
   }
   
   // Display pet profiles
