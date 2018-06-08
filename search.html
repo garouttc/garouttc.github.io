@@ -57,7 +57,7 @@
       <div id="jdiv" class="jumbotron">
         <h1>UNLEASHED PET FINDER</h1>
         <h3>Please provide your lost pet's details</h3>
-        <form action="/search-results" method="post">
+        <form action="#" method="post">
           <fieldset>
             <legend>My Pet</legend>
 
@@ -149,12 +149,14 @@
                  </label>
             <label>
                  <br>
-                     <input type="submit" name="Submit" value="Submit">
+                     <input type="hidden" name="Submit" value="submit">
                  </label>
           </fieldset>
         </form>
         <p><button onclick="geoFindMe()">Or Save Current Location</button></p>
         <div id="out"></div>
+        <!-- <a type="button" id="fakeSubmit" class="btn btn-outline-dark btn btn-sm" href="/search-results.html" role="button">SUBMIT</a> -->
+         <a href="search-results.html"><button type="button">SUBMIT</button></a>
         <br/>
       </div>
 
