@@ -9,15 +9,15 @@ function displayPetProfiles()
   document.getElementById("hello-user").appendChild(text);
 
   // Get the user's JSON pet list from storage
-  var petsStorage = sessionStorage.getItem("pets");
-  var pets;
+  var pets = JSON.parse(sessionStorage.getItem("pets"))
+      console.log(pets[0].name);
+        console.log(pets[0].breed);
+        console.log(pets[0].species);
   var pet;
   if (petsStorage)
   {
     pets = JSON.parse(petsStorage);
-    console.log(pets[0].name);
-        console.log(pets[0].breed);
-        console.log(pets[0].species);
+
   }
   
   // Display pet profiles
