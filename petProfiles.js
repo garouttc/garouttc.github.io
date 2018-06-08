@@ -78,4 +78,5 @@ function displayPetProfiles()
   document.getElementById("add-pet").style.display = "";
 }
 
-document.addEventListener("DOMContentLoaded", displayPetProfiles());
+
+document.addEventListener(document.getElementById("submit").onclick, displayPetProfiles());
