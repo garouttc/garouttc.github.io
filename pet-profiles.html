@@ -12,7 +12,23 @@
     <script>
       function submitPetProfileForm()
       {
-        
+        var name = document.getElementById("add-pet-profile-form").elements["name"].value;
+        var species = document.getElementById("add-pet-profile-form").elements["species"].value; 
+        var breed = document.getElementById("add-pet-profile-form").elements["breed"].value; 
+        var gender = document.getElementById("add-pet-profile-form").elements["gender"].value; 
+        var color = document.getElementById("add-pet-profile-form").elements["color"].value; 
+        var newPet = {"name": name, "species": species, "gender": gender, "breed": breed, "color": color};
+        var pets = JSON.parse(sessionStorage.getItem("pets"));
+        if (pets)
+        {
+           pets.push(newPet);
+        }
+        else
+        {
+          pets = [newPet];
+        }
+        document.sessionStorage.setItem("pets", JSON.stringify(pets));
+        window.location = "https://garouttc.github.io/pet-profiles.html";
       }
     </script
     <script src="/socket.io/socket.io.js"></script>
@@ -62,7 +78,7 @@
     </div>
       
         <div id="add-pet" class="col-sm-12">
-          <form>
+          <form id="add-pet-profile-form">
             <fieldset>
               <legend>Add Another Pet Profile<legend>
               Name:    <input type="text" name="name"><br>
