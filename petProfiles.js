@@ -35,6 +35,7 @@ function displayPetProfiles()
 
     
     // Display pet name as a header for profile
+     console.log(pet.name);
     var nameHeader = document.createElement("h3");
     var text = "Pet: ";
     text.concat(pet.name);
