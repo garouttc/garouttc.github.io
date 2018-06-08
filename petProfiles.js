@@ -1,5 +1,10 @@
 function displayPetProfiles()
 {
+  if (!sessionStorage.getItem("username"))
+  {
+    window.location = "https://garouttc.github.io/index.html";
+  }
+  
   // Say hello to the logged-in user
   var helloString = "Hello ";
   helloString = helloString.concat(sessionStorage.getItem("username"));
