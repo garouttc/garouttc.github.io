@@ -44,7 +44,7 @@
           <li><a href="/index.html">Home</a></li>
           <li><a href="/search.html">Search for a Pet</a></li>
           <li><a href="/report-found.html">Report a Lost Pet</a></li>
-          <li><a href="/my-profile.html">My Profile</a></li>
+          <li><a href="/pet-profiles.html">My Profile</a></li>
           <li><a href="/pet-profiles.html">My Pet Profiles</a></li>
           <li><a id="logout" href="." onclick="logout()">Logout</a></li>
         </ul>
@@ -65,110 +65,126 @@
            <h3>Here are the lost pets found in your area.</h3>
            <h5>We hope you and your beloved pet are reunited soon.</h5>
 
+
            <div class="col-sm-4 col-xs-6">
-             <p>PET 1</p>
-              <div class="thumbnail">
+
+              <div id="petMatch1" class="thumbnail">
+                <p>PET 1</p>
                  <img src="https://source.unsplash.com/KCdYn0xu2fU">
                  <button type="button" class="btn btn-success btn-sm">This is my pet!</button>
-                 <button type="button" class="btn btn-danger btn-sm">This is not my pet.</button>
+                 <button onclick="toggle_visibility('petMatch1')" type="button" class="btn btn-danger btn-sm">This is not my pet.</button>
               </div>
 
-             <p>PET 2</p>
-               <div class="thumbnail">
+
+               <div id="petMatch2" class="thumbnail">
+                 <p>PET 2</p>
                  <img src="https://source.unsplash.com/w_O_tPgxvok">
                  <button type="button" class="btn btn-success btn-sm">This is my pet!</button>
-                 <button type="button" class="btn btn-danger btn-sm">This is not my pet.</button>
+                 <button onclick="toggle_visibility('petMatch2')" type="button" class="btn btn-danger btn-sm">This is not my pet.</button>
                </div>
 
-             <p>PET 3</p>
-               <div class="thumbnail">
+
+               <div id="petMatch3" class="thumbnail">
+                 <p>PET 3</p>
                  <img src="https://source.unsplash.com/oH9AuO20kbk">
                  <button type="button" class="btn btn-success btn-sm">This is my pet!</button>
-                 <button type="button" class="btn btn-danger btn-sm">This is not my pet.</button>
+                 <button onclick="toggle_visibility('petMatch3')" type="button" class="btn btn-danger btn-sm">This is not my pet.</button>
                </div>
 
-             <p>PET 4 </p>
-               <div class="thumbnail">
+
+               <div id="petMatch4" class="thumbnail">
+                  <p>PET 4 </p>
                  <img src="https://source.unsplash.com/_c_I5GMZYR0">
                  <button type="button" class="btn btn-success btn-sm">This is my pet!</button>
-                 <button type="button" class="btn btn-danger btn-sm">This is not my pet.</button>
+                 <button onclick="toggle_visibility('petMatch4')" type="button" class="btn btn-danger btn-sm">This is not my pet.</button>
                </div>
 
-             <p>PET 5 </p>
-               <div class="thumbnail">
+
+               <div id="petMatch5" class="thumbnail">
+                 <p>PET 5 </p>
                  <img src="https://source.unsplash.com/geO1ObmZMVQ">
                  <button type="button" class="btn btn-success btn-sm">This is my pet!</button>
-                 <button type="button" class="btn btn-danger btn-sm">This is not my pet.</button>
+                 <button onclick="toggle_visibility('petMatch5')" type="button" class="btn btn-danger btn-sm">This is not my pet.</button>
                </div>
 
-             <p>PET 6 </p>
-               <div class="thumbnail">
+
+               <div id="petMatch6" class="thumbnail">
+                 <p>PET 6 </p>
                  <img src="https://source.unsplash.com/WSFY8g2CJDo">
                  <button type="button" class="btn btn-success btn-sm">This is my pet!</button>
-                 <button type="button" class="btn btn-danger btn-sm">This is not my pet.</button>
+                 <button onclick="toggle_visibility('petMatch6')" type="button" class="btn btn-danger btn-sm">This is not my pet.</button>
                </div>
 
-             <p>PET 7 </p>
-               <div class="thumbnail">
+
+               <div id="petMatch7" class="thumbnail">
+                 <p>PET 7 </p>
                  <img src="https://source.unsplash.com/FqkBXo2Nkq0">
                  <button type="button" class="btn btn-success btn-sm">This is my pet!</button>
-                 <button type="button" class="btn btn-danger btn-sm">This is not my pet.</button>
+                 <button onclick="toggle_visibility('petMatch7')" type="button" class="btn btn-danger btn-sm">This is not my pet.</button>
                </div>
 
-               <p>PET 8</p>
-                <div class="thumbnail">
+
+                <div id="petMatch8" class="thumbnail">
+                  <p>PET 8</p>
                    <img src="https://source.unsplash.com/E1GqYJFnXoU">
                    <button type="button" class="btn btn-success btn-sm">This is my pet!</button>
-                   <button type="button" class="btn btn-danger btn-sm">This is not my pet.</button>
+                   <button onclick="toggle_visibility('petMatch8')" type="button" class="btn btn-danger btn-sm">This is not my pet.</button>
                 </div>
 
-               <p>PET 9</p>
-                 <div class="thumbnail">
+
+                 <div id="petMatch9" class="thumbnail">
+                   <p>PET 9</p>
                    <img src="https://source.unsplash.com/n4RJtjHhb9A">
                    <button type="button" class="btn btn-success btn-sm">This is my pet!</button>
-                   <button type="button" class="btn btn-danger btn-sm">This is not my pet.</button>
+                   <button onclick="toggle_visibility('petMatch9')" type="button" class="btn btn-danger btn-sm">This is not my pet.</button>
                  </div>
 
-               <p>PET 10</p>
-                 <div class="thumbnail">
+
+                 <div id="petMatch10" class="thumbnail">
+                   <p>PET 10</p>
                    <img src="https://source.unsplash.com/yZTbN9-5fx4">
                    <button type="button" class="btn btn-success btn-sm">This is my pet!</button>
-                   <button type="button" class="btn btn-danger btn-sm">This is not my pet.</button>
+                   <button onclick="toggle_visibility('petMatch10')" type="button" class="btn btn-danger btn-sm">This is not my pet.</button>
                  </div>
 
-               <p>PET 11</p>
-                 <div class="thumbnail">
+
+                 <div id="petMatch11" class="thumbnail">
+                   <p>PET 11</p>
                    <img src="https://source.unsplash.com/J1R-xl_TPPM">
                    <button type="button" class="btn btn-success btn-sm">This is my pet!</button>
-                   <button type="button" class="btn btn-danger btn-sm">This is not my pet.</button>
+                   <button onclick="toggle_visibility('petMatch11')" type="button" class="btn btn-danger btn-sm">This is not my pet.</button>
                  </div>
 
-               <p>PET 12</p>
-                 <div class="thumbnail">
+
+                 <div id="petMatch12" class="thumbnail">
+                   <p>PET 12</p>
                    <img src="https://source.unsplash.com/q1pw1dOW0_0">
                    <button type="button" class="btn btn-success btn-sm">This is my pet!</button>
-                   <button type="button" class="btn btn-danger btn-sm">This is not my pet.</button>
+                   <button onclick="toggle_visibility('petMatch12')" type="button" class="btn btn-danger btn-sm">This is not my pet.</button>
                  </div>
 
-               <p>PET 13</p>
-                 <div class="thumbnail">
+
+                 <div id="petMatch13" class="thumbnail">
+                   <p>PET 13</p>
                    <img src="https://source.unsplash.com/BzHNKFUGHh0">
                    <button type="button" class="btn btn-success btn-sm">This is my pet!</button>
-                   <button type="button" class="btn btn-danger btn-sm">This is not my pet.</button>
+                   <button onclick="toggle_visibility('petMatch13')" type="button" class="btn btn-danger btn-sm">This is not my pet.</button>
                  </div>
 
-               <p>PET 14</p>
-                 <div class="thumbnail">
+
+                 <div id="petMatch14" class="thumbnail">
+                   <p>PET 14</p>
                    <img src="https://source.unsplash.com/GXMr7BadXQo">
                    <button type="button" class="btn btn-success btn-sm">This is my pet!</button>
-                   <button type="button" class="btn btn-danger btn-sm">This is not my pet.</button>
+                   <button onclick="toggle_visibility('petMatch14')" type="button" class="btn btn-danger btn-sm">This is not my pet.</button>
                  </div>
 
-               <p>PET 15</p>
-                 <div class="thumbnail">
+
+                 <div id="petMatch15" class="thumbnail">
+                   <p>PET 15</p>
                    <img src="https://source.unsplash.com/adK3Vu70DEQ">
                    <button type="button" class="btn btn-success btn-sm">This is my pet!</button>
-                   <button type="button" class="btn btn-danger btn-sm">This is not my pet.</button>
+                   <button onclick="toggle_visibility('petMatch15')" type="button" class="btn btn-danger btn-sm">This is not my pet.</button>
                  </div>
              </div>
            </div>
@@ -217,9 +233,22 @@
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
 
     <script src="/socket.io/socket.io.js"></script>
-    <script src="mapp.js"></script>
+    <script src="mappy.js"></script>
     <script src="datetimepicker.js"></script>
     <script src="showFile.js"></script>
+    <script src="hide-nonpet.js"></script>
+
+    <!-- <script type="text/javascript">
+<!
+    function toggle_visibility(id) {
+       var e = document.getElementById(id);
+       // if(e.style.display == 'block')
+          e.style.display = 'none';
+       // else
+       //    e.style.display = 'block';
+    }
+//-->
+
 
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css" rel="stylesheet" />
