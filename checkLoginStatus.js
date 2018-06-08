@@ -33,10 +33,6 @@ function submitLoginForm()
     var pets = [{"name": "Test Doggo", "species": "Canis lupus familiaris", "gender": "male", "breed": "Golden Retriever", "color": "Golden"}];
     sessionStorage.setItem("pets", JSON.stringify(pets));
     
-    if (typeof displayPetProfiles === "function")
-    {
-        displayPetProfiles();
-    }
 }
 
 function login()
