@@ -30,10 +30,9 @@ function displayPetProfiles()
 
     
     // Display pet name as a header for profile
-     console.log(pet.name);
     var nameHeader = document.createElement("h3");
     var text = "Pet: ";
-    text.concat(pet.name);
+    text = text.concat(pet.name);
     nameHeader.appendChild(document.createTextNode(text));
     div.appendChild(nameHeader);
     
@@ -44,7 +43,7 @@ function displayPetProfiles()
     var attr = document.createElement("li");
     attr.style.listStyleType = "none";
     var attrText = "Species: ";
-    attrText.concat(pet.species);
+    attrText = attrText.concat(pet.species);
     attr.appendChild(document.createTextNode(attrText));
     list.appendChild(attr);
     
@@ -52,7 +51,7 @@ function displayPetProfiles()
     attr = document.createElement("li");
     attr.style.listStyleType = "none";
     attrText = "Breed: ";
-    attrText.concat(pet.breed);
+    attrText = attrText.concat(pet.breed);
     attr.appendChild(document.createTextNode(attrText));
     list.appendChild(attr);
     
@@ -60,7 +59,7 @@ function displayPetProfiles()
     attr = document.createElement("li");
     attr.style.listStyleType = "none";
     attrText = "Gender: ";
-    attrText.concat(pet.gender);
+    attrText = attrText.concat(pet.gender);
     attr.appendChild(document.createTextNode(attrText));
     list.appendChild(attr);
     
@@ -68,7 +67,7 @@ function displayPetProfiles()
     attr = document.createElement("li");
     attr.style.listStyleType = "none";
     attrText = "Color: ";
-    attrText.concat(pet.color);
+    attrText = attrText.concat(pet.color);
     attr.appendChild(document.createTextNode(attrText));
     list.appendChild(attr);
     
