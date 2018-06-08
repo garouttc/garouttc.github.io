@@ -79,4 +79,4 @@ function displayPetProfiles()
 }
 
 
-//document.addEventListener(document.getElementById("jdiv").onchange, displayPetProfiles());
+document.addEventListener("DOMContentLoaded", displayPetProfiles());
