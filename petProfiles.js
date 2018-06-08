@@ -15,7 +15,9 @@ function displayPetProfiles()
   if (petsStorage)
   {
     pets = JSON.parse(petsStorage);
-    //window.alert(pets[0].name);
+    console.log(pets[0].name);
+        console.log(pets[0].breed);
+        console.log(pets[0].species);
   }
   
   // Display pet profiles
