@@ -14,11 +14,6 @@ function displayPetProfiles()
         console.log(pets[0].breed);
         console.log(pets[0].species);
   var pet;
-  if (petsStorage)
-  {
-    pets = JSON.parse(petsStorage);
-
-  }
   
   // Display pet profiles
   var i;
