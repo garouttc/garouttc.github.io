@@ -9,7 +9,12 @@
     <!--For Doc Download-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
-
+    <script>
+      function submitPetProfileForm()
+      {
+        
+      }
+    </script
     <script src="/socket.io/socket.io.js"></script>
 
   </head>
@@ -53,7 +58,19 @@
 
           <br/>
         </div>
-
+        <div id="add-pet" class="col-sm-12">
+          <form>
+            <fieldset>
+              <legend>Add Another Pet Profile<legend>
+              Name:    <input type="text" value="name"><br>
+              Species: <input type="text" value="species"><br>
+              Breed:   <input type="text" value="breed"><br>
+              Gender:  <input type="text" value="gender"><br>
+              Color:   <input type="text" value="color"><br>
+              <input id="submit" type="button" name="submit" value="Submit" onclick="submitPetProfileForm()">
+            </fieldset>
+          </form>
+        </div>
     </div>
 
 <!--CITE COPYRIGHT-->
