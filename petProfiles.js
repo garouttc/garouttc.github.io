@@ -74,7 +74,8 @@ function displayPetProfiles()
     
   }
   
-  // Add button for creating a new pet profile 
+  // Show the add pet profile form
+  document.getElementById("add-pet").style.display = "";
 }
 
 document.addEventListener("DOMContentLoaded", displayPetProfiles());
