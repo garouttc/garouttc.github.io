@@ -17,7 +17,7 @@ function displayPetProfiles()
   // Say hello to the logged-in user
   var helloString = "Hello ";
   helloString = helloString.concat(sessionStorage.getItem("username"));
-  helloString = helloString.concat("! Here are your pet profiles.");
+  helloString = helloString.concat("! Here is the contact for the pet finder user, iLuvAnimalz.");
   var text = document.createTextNode(helloString);
   console.log(helloString);
   document.getElementById("hello-user").appendChild(text);
